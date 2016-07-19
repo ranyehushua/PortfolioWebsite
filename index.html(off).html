@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ran's Portfolio of Awesomeness</title>
+    <title>Ran's Portfolio</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -165,6 +165,7 @@
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
+              <div id="notEmail" style="display:none">Please enter a valid email address</div>
               <input type="email" name="email" class="form-control" id="formEmail">
             </div>
           </div>
@@ -176,13 +177,56 @@
           </div>
           <div class="form-group text-center">
             <input type="submit" name="submit" value="Submit Message" id="submitContact" class="btn btn-success">
+            <div id="formError" style="display:none"></div>
           </div>
         </form>
+        <!-- email validation script -->
+        <script src="js/email.js"></script>
       </div>
       <!-- End Contact Form -->
 
       <!-- Start PHP email submission -->
+      <div>
+        <?php
 
+          if ($_POST['submit']) {
+            $emailFrom = "ranyehushua@yehoosh.ninja";
+            $emailTo = "ranyehushua@gmail.com";
+            $replyTo = $_POST['email'];
+            $subject = "Message from " . $_POST['name'];
+            $body = $_POST['comment'];
+            $headers = "From: $emailFrom \r\n";
+            $headers .= "Reply-To: $replyTo \r\n";
+            $headers .= "Return-Path: $emailFrom\r\n";
+            $headers .= "X-Mailer: PHP \r\n";
+            $error = "";
+
+            if (!$_POST['name']) {
+              $error .= "<li>You forgot to enter your name</li>";
+            }
+
+            if (!$_POST['email']) {
+              $error .= "<li>You forgot to enter your email address</li>";
+            }
+
+            if (!$_POST['comment']) {
+              $error .= "<li>You forgot to enter a comment</li>";
+            }
+
+            if ($error) {
+              echo "<ul class='form-error-list'>$error</ul>";
+            } else if (mail($emailTo, $subject, $body, $headers)) {
+              echo "Your message was sent succesfully!";
+            } else {
+              echo "There was an error sending your message.";
+            }
+
+          
+
+          }
+        
+        ?>
+      </div>
       <!-- End PHP email submission -->
 
     </div>
@@ -209,9 +253,3 @@
   <script src="js/script.js"></script>
   </body>
 </html>
-
-<!-- <li><a class="btn btn-default social-button fb-button" href="http://www.facebook.com/ran.yehushua/" role="button">Facebook</a></li>
-            <li><a class="btn btn-default social-button twitter-button" href="http://www.Twitter.com/yehoosh/" role="button">Twitter</a></li>
-            <li><a class="btn btn-default social-button insta-button" href="https://www.instagram.com/yehoosh/" role="button">Instagram</a></li>
-            <li><a class="btn btn-default social-button linkedin-button" href="https://www.linkedin.com/in/ran-yehushua-32617422" role="button">Linkedin</a></li>
-            <li><a class="btn btn-default social-button github-button" href="https://github.com/ranyehushua/" role="button">GitHub</a></li> -->
