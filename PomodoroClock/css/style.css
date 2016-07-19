@@ -1,0 +1,59 @@
+* {
+  background-color: black;
+  color: white;
+  /*  These portions below are in order to remove any highlighting/selecting from the user, borrowed from http://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript  */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  font-size: 4.5em;
+  margin: 50px;
+  font-family: serif
+}
+
+#controls {
+  width: 360px;
+  margin: 10px auto;
+}
+
+#clock {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 10px auto 80px;
+  cursor: pointer;
+}
+
+#clockMode {
+  font-size: 3em;
+  margin: 50px;
+}
+
+#timer {
+  font-size: 4em;
+  display: inline-block;
+}
+
+
+/* seconds are initially not displayed */
+
+#seconds,
+#timerColon {
+  display: none;
+}
+
+.inc-down,
+.inc-up {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.inc-controls {
+  font-size: 2em;
+}
