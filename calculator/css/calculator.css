@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#calculator {
+	width: 375px;
+	margin: auto;
+	border: 1px black solid;
+	background-color: #c9c9c9;
+	border-radius: 10px;
+}
+
+#output {
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+	border: 4px #515151 solid;
+	border-radius: 5px;
+	height: 2em;
+	text-align: right;
+	padding: 5px;
+	background-color: #90AACF;
+	color: #4D5B6F;
+}
+
+.buttonList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+	border: 1px black solid;
+	border-radius: 3px;
+	background-color: #333;
+	color: #ccc;
+	padding: 5px;
+	width: 50px;
+	text-align: center;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.button:active,
+#clear:active {
+	color: #333;
+	background-color: #AAC3E8;
+}
+
+#keypad .button {
+	display: inline-block;
+}
+
+#operators .button {
+	margin-bottom: 10px;
+}
+
+#clear {
+	width: 100px;
+	margin: 0 auto 20px;
+	background-color: #333;
+	color: #ccc;
+	cursor: pointer;
+	padding: 5px;
+	border: 1px black solid;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#keypad {
+	float: left;
+	width: 200px;
+	margin: 30px 15px 10px 48px;
+}
+
+#operators {
+	float: left;
+	margin-top: 30px;
+}
