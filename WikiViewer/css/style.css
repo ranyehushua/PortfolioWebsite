@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #226622;
+}
+
+#main {
+  margin: 150px auto;
+  width: 300px;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F0AD4E;
+}
+
+#search {
+  margin: 15px 0;
+}
+
+#searchResults {
+  list-style: none;
+  padding-left: 0;
+}
+
+#searchResults li {
+  background-color: #31B0D5;
+  padding: 3px 10px;
+  margin: 10px
+}
+
+#searchResults li h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 5px auto;
+}
+
+#searchResults li:hover {
+  border-left: 10px solid #F0AD4E;
+}
+
+
+/* set the new search button display to none initially, will show this button and hide the search button after search results are displayed. Hitting the new search button will reset the results and layout */
+.newSearchButton {
+  display: none;
+}
+
+#topNewSearch {
+  margin-top: 5px;
+}
+
+#bottomNewSearch {
+  margin: 20px auto;
+}
+
