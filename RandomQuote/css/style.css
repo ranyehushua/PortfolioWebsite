@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 80px;
+  background-color: red;
+  color: red;
+  min-width: 760px;
+}
+
+#quoteBox {
+  background-color: white;
+  padding: 50px;
+}
+
+blockquote,
+blockquote cite,
+blockquote footer{
+  color: inherit;
+}
+
+#newQuote,
+#newQuote:focus {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 0px;
+  outline: 0;
+  border: none;
+}
+
+
+
+#footer {
+  color: white;
+  margin-top: 10px;
+}
+
+#footer a,
+#footer a:hover {
+  color: white;
+}
+
+#tweetButton {
+  margin-top: 10px;
+}
