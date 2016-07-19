@@ -190,7 +190,7 @@
         <?php
 
           if ($_POST['submit']) {
-            $emailFrom = "ranyehushua@yehoosh.ninja";
+            $emailFrom = "ranyehushua@yehoosh.com";
             $emailTo = "ranyehushua@gmail.com";
             $replyTo = $_POST['email'];
             $subject = "Message from " . $_POST['name'];
