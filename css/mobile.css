@@ -1,0 +1,28 @@
+/********************************************
+Modifications to style when on mobile device
+********************************************/
+
+@media screen and (max-width: 480px) {
+	#introNav {
+		padding-left: 0;
+	}
+
+	#introNav li {
+		list-style: none;
+		display: block;
+	}
+
+	#introHeader h1 {
+		font-size: 3em;
+	}
+}
+
+/*This query is just used to make sure that the background is set to 'scroll' rather than 'fixed' on mobile devides, otherwise there is an issue with the zoomed background image*/
+@media screen and (max-width: 768px) {
+	#home,
+	#about,
+	#portfolio,
+	#contact {
+		background-attachment: scroll;
+	}
+}

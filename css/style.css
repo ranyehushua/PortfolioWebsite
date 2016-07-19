@@ -1,0 +1,189 @@
+/*****************
+GENERAL
+*****************/
+
+* {
+	box-sizing: border-box;
+}
+
+.module {
+	/*height: 800px;*/
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+/*****************
+NAVIGATION
+*****************/
+
+#navbar-links li.active a {
+	background-color: #23C4EB;
+	margin-top: 1px;
+}
+
+#navbar-links li.active a:last-child {
+	margin-right: 1px;
+}
+
+
+.navbar-header .navbar-brand {
+	color: white;
+}
+
+/*****************
+HOME MODULE
+*****************/
+
+#home { 
+	background: url(../img/mountain-background.jpg) no-repeat left fixed; /*borrowed from http://www.hdwallpapers.org/walls/ama-dablam-himalaya-mountains-wide.jpg*/
+	/*Email sent requesting permission to use on 3/5/2016*/
+	/*Hello Piyush,
+I am currently studying web development and I came across this post of yours on HDWallpapers,org: http://www.hdwallpapers.org/ama-dablam-himalaya-mountains-wallpapers.html
+
+I am just making a basic landing page as practice and I was hoping it would be alright with you  if I use this image as my main landing background? I will not be monetizing off this site at all, no advertisement or sale. It's just a basic practice landing page but I'd like to launch it live so I can share my work with friends, family and potential employers. 
+
+Would this be alright with you?
+
+Thanks!
+-Ran*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#introHeader {
+	/*margin-top: 200px;*/
+	color: #15110B;
+}
+
+#introHeader h1 {
+	font-size: 4em;
+	font-weight: 800;
+}
+
+#introHeader h3 {
+	font-weight: 700;
+}
+
+#introNav li {
+	margin-top: 5px;
+}
+
+.social-button {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+}
+
+.fb-button {
+	background-image: url('../img/glyphicons-facebook.png');
+}
+
+.twitter-button {
+	background-image: url('../img/glyphicons-twitter.png');
+}
+
+.insta-button {
+	background-image: url('../img/glyphicons-instagram.png');
+}
+
+.linkedin-button {
+	background-image: url('../img/glyphicons-linkedin.png');
+}
+
+.github-button {
+	background-image: url('../img/glyphicons-github.png');
+}
+
+/*****************
+ABOUT MODULE
+*****************/
+
+#about { 
+	background: url(../img/about-background.jpg) no-repeat center fixed; /*borrowed from http://www.josephlozowski.name/jared/pictures/drop-of-water-597109_1280.jpg*/
+	/*sent email to lozowskijr@gmail.com on 3/5/2016 requesting permission to use this image*/
+	/*received response from Joseph on 3/5, I can use this image - he got it for free*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+#about h2 {
+	margin-top: 10px;
+}
+
+#avatarImage {
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+/*****************
+PORTFOLIO MODULE
+*****************/
+
+#portfolio { 
+	background: url(../img/portfolio-background.jpg) no-repeat center fixed; /*borrowed from http://samuelmontgomery.com/wp-content/uploads/2015/10/CyT83yY.jpg*/
+	/*sent email to sammontgomerydevelopment@gmail.com on 3/5/2016 requesting permission to use*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#portfolio .thumbnail {
+	background-color: #F5F5F5;
+}
+
+#portfolio .thumbnail:hover {
+	text-decoration: none;
+}
+
+#portfolio .thumbnail .caption {
+	color: #BDC3CF;
+}
+
+
+
+/*****************
+CONTACT MODULE
+*****************/
+
+#contact { 
+	background: url(../img/contact-background.jpg) no-repeat center fixed; /*Obtained for fre from pixabay*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: #F5F5F5;
+}
+
+#emailMessage {
+	height: 108px;
+	resize: none;
+}
+
+#contact h3 {
+	margin-bottom: 30px;
+	font-weight: 800;
+}
+
+#submitContact {
+	margin-top: 20px;
+}
+
+/*****************
+FOOTER
+*****************/
+
+footer {
+	background-color: #ccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
