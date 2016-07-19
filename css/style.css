@@ -179,6 +179,17 @@ CONTACT MODULE
 	margin-top: 20px;
 }
 
+.form-error-list {
+  margin: 0;
+}
+
+.form-error-list,
+#formError,
+#notEmail {
+  color: black;
+  font-weight: bold;
+}
+
 /*****************
 FOOTER
 *****************/
