@@ -1,0 +1,170 @@
+/******************************
+GENERAL AND QUADRANT DIVS
+******************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10px;
+  background-image: url('../img/floor.jpg');
+}
+
+#wrapper {
+  position: relative;
+  left: calc(50% - 300px);
+}
+
+#wrapper > div {
+  position: absolute;
+}
+
+#quad-wrapper {
+  width: 600px;
+  line-height: 0em;
+  border-radius: 50%;
+  -webkit-box-shadow: 8px -6px 15px -1px rgba(5,5,5,0.89);
+-moz-box-shadow: 8px -6px 15px -1px rgba(5,5,5,0.89);
+box-shadow: 8px -6px 15px -1px rgba(5,5,5,0.89);
+}
+
+.quad {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  border: 10px solid #444;
+}
+
+#green {
+  background-color: #00A74A;
+  border-radius: 100% 0 0 0;
+}
+/*change green to #00F74A when pressed*/
+
+#red {
+  background-color: #9F0F17;
+  border-radius: 0 100% 0 0 ;
+}
+/*change red to #FF0F17 when pressed*/
+
+#yellow {
+  background-color: #CCA707;
+  border-radius: 0 0 0 100%;
+}
+/*change yellow to #CCF707 when pressed*/
+
+#blue {
+  background-color: #094A8F;
+  border-radius: 0 0 100% 0 ;
+}
+/*change blue to #094AFF when pressed*/
+
+/******************************
+CONTROLS
+******************************/
+#controls-wrapper {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #444; 
+  border-radius: 100%;
+  background-color: #ECE7EE;
+  top: 150px;
+  left: 150px;
+  padding-left: 20px;
+}
+
+#controls-wrapper p {
+  font-family: 'Oswald', sans-serif;
+}
+
+#logo {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3em;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-bottom: 5px;
+}
+
+#logo span {
+  position: relative;
+  font-size: .4em;
+  top: -20px;
+  font-weight: 800;
+}
+
+.controlDiv {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+.controlDiv p {
+  margin: 5px 0 0;
+}
+
+#count {
+  height: 50px;
+  width: 100%;
+  background-color: #32050C;
+  border: 3px solid #444;
+  border-radius: 10px;
+}
+
+#count span {
+  font-family: 'VT323', monospace;
+  font-size: 2.5em;
+  /*Font color when game is off, when turned on the JS will change it to #DC0D29*/
+  color: #430710; 
+}
+
+.circleControls {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border: 5px solid #444;
+  border-radius: 100%;
+}
+
+#start {
+  background-color: #FC0102;
+}
+
+#strict {
+  /*change background-color with JS when turned on, change to #FFFF00*/
+  background-color: #888800;
+}
+
+#powerDiv {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+#powerDiv > p {
+  display: inline;
+}
+
+#power {
+  width: 60px;
+  height: 20px;
+  background-color: #444;
+  display: inline-block;
+  margin: 0 10px -3px;
+}
+
+#slider {
+  width: 30px;
+  height: 20px;
+  background-color: #3193DE;
+  /*Change to float: right with JS when the game is turned on*/
+  float: left;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+#power,
+#start,
+#strict,
+.quad {
+  cursor: pointer;
+}
