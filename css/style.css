@@ -12,15 +12,6 @@ GENERAL
 	padding-bottom: 200px;
 }
 
-a {
-	color: inherit;
-}
-
-a:hover {
-	color: inherit;
-	text-decoration: underline;
-}
-
 /*****************
 NAVIGATION
 *****************/
@@ -122,6 +113,11 @@ ABOUT MODULE
 
 #about h2 {
 	margin-top: 10px;
+}
+
+#about a {
+	color: inherit;
+	text-decoration: underline;
 }
 
 #avatarImage {
