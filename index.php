@@ -100,7 +100,7 @@
       <div class="row">
         <!-- Start Thumbnail #1 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="calculator/calculator.html">
+          <a class="thumbnail" href="calculator/index.html">
             <img src="img/thumbnails/calculator.png" class="img-responsive">
             <div class="caption">A vanilla JavaScript calculator application.</div>
           </a>
