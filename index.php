@@ -82,6 +82,7 @@
         <h2>Yehoosh Web Solutions.</h2>
         <p>I am a self taught web developer based in Salt Lake City, Utah. When I am not honing my web development skills, I enjoy spending my freetime in the Wasatch Mountains, snowboarding in the winter and mountain biking in the summer.</p>
         <p>I am currently seeking work in the web development and design field. If you would like to network, please do not hesitate to contact me!</p>
+        <p>Please also feel free to <a href="files/Resume.pdf">browse my Resume</a></p>
         </div>
         <!-- right column is hidden on screens less than 768px wide -->
         <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1">
