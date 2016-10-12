@@ -16,6 +16,11 @@ a {
 	color: inherit;
 }
 
+a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
 /*****************
 NAVIGATION
 *****************/
