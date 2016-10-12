@@ -124,7 +124,7 @@ $('#start').click(function() {
 
 //On mouse down of quadrant, sound starts playing, color changes to brighter version and the color
 //pressed gets pushed to the game's player array. See mouse up listener for rest of player's move UI
-$('.quad').mousedown(function() {
+$('.quad').bind('vmousedown', function() {
 	//hitting the quadrant colors should only do something if it is the player's turn to go
 	if (game.playerTurn) {
 		clearTimers();
@@ -136,7 +136,7 @@ $('.quad').mousedown(function() {
 
 //At mouse up, for the UI we stop playing the sound, change color back to the non-pressed version.
 //Mouse up will also trigger the games method for checking whether gameover or good move.
-$('.quad').mouseup(function() {
+$('.quad').bind('vmouseup', function() {
 	var color = $(this).attr('id');
 	returnStatic(color);
 	if (game.playerTurn) {
