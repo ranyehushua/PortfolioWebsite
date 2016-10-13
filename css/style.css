@@ -120,8 +120,12 @@ ABOUT MODULE
 	text-decoration: underline;
 }
 
+#bio {
+	background-color: rgba(50, 50, 50, .6);
+	border-radius: 20px;
+}
+
 #avatarImage {
-	margin-top: 10px;
 	border-radius: 20px;
 }
 

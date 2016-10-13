@@ -25,4 +25,8 @@ Modifications to style when on mobile device
 	#contact {
 		background-attachment: scroll;
 	}
+
+	#avatarImage {
+		margin-top: 20px;
+	}
 }
