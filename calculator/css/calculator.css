@@ -13,13 +13,6 @@ body {
 	background-image: url('../img/calc-background.jpg');
 }
 
-/*media query used to fix issue with loading calc on 375px wide display (iphone) - issue caused by 5px thick right border on calc*/
-@media (max-width: 375px) {
-  body {
-    margin-left: 5px;
-  }
-}
-
 #calculator {
 	width: 375px;
 	height: 400px;
