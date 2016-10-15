@@ -35,6 +35,10 @@ body {
   border: 10px solid #444;
 }
 
+.quad:focus {
+  outline: none;
+}
+
 #green {
   background-color: #00A74A;
   border-radius: 100% 0 0 0;
