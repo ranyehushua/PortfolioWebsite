@@ -1,22 +1,7 @@
-$(document).ready(function() {
+$(function() {
 	var power = false; //power is set to off when page is loaded
 	var game; //variable to store the Game object
 	var timers = []; //store all timers in an array, so they can easily all be killed with power off or other appropriate events
-
-	// Determine whether touch screen is supported
-	var touchsupport = false;
-	if ('ontouchstart' in window || window.navigator.msPointerEnabled)	supportsTouch = true;
-
-	// Set quad listener events based on whether touch is supported
-	var quaddown;
-	var quadup;
-	if (touchsupport) {
-		quaddown = 'touchstart';
-		quadup = 'touchend';
-	} else {
-		quaddown = 'mousedown';
-		quadup = 'mouseup';
-	}
 
 	//declaring audio objects
 	var greenAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
@@ -139,7 +124,7 @@ $(document).ready(function() {
 
 	//On mouse down of quadrant, sound starts playing, color changes to brighter version and the color
 	//pressed gets pushed to the game's player array. See mouse up listener for rest of player's move UI
-	$('.quad').on(quaddown, function() {
+	$('.quad').mousedown(function() {
 		//hitting the quadrant colors should only do something if it is the player's turn to go
 		if (game.playerTurn) {
 			clearTimers();
@@ -151,14 +136,13 @@ $(document).ready(function() {
 
 	//At mouse up, for the UI we stop playing the sound, change color back to the non-pressed version.
 	//Mouse up will also trigger the games method for checking whether gameover or good move.
-	$('.quad').on(quadup, function() {
+	$('.quad').mouseup(function() {
 		var color = $(this).attr('id');
 		returnStatic(color);
 		if (game.playerTurn) {
 			game.checkMove();
 		}
 	});
-
 
 	//Defining the game object constructor
 	function Game() {
