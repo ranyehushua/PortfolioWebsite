@@ -18,6 +18,26 @@ $(function() {
 
 	var errorAudio = new Audio('audio/gameover.mp3');
 
+	//Audio streams are only loaded into memory when triggered by user, so they aren't getting loaded on document ready function
+	//Declaring this function to run when the user switches the game to 'ON' which will cause all audio files to quickly play
+	//and then pause, in order to load the sounds into memory
+	function prepSounds () {
+		greenAudio.play();
+		greenAudio.pause();
+
+		redAudio.play();
+		redAudio.pause();
+
+		yellowAudio.play();
+		yellowAudio.pause();
+
+		blueAudio.play();
+		blueAudio.pause();
+
+		errorAudio.play();
+		errorAudio.pause(); 
+	}
+
 	//global public timeout function for making sure moves are made in time
 	function setTurnTimer() {
 		var t = window.setTimeout(function () {
@@ -89,6 +109,7 @@ $(function() {
 			$('#count span').css('color', '#DC0D29');
 			console.log('Power ON');
 			game = new Game();
+			prepSounds();
 		} else { //else if power is already on and turning off
 			game.reset(); //just in case the game is turned off while a color is changed, this will set all colors back to dim
 			clearTimers();
