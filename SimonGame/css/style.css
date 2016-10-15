@@ -3,6 +3,7 @@ GENERAL AND QUADRANT DIVS
 ******************************/
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -33,7 +34,6 @@ body {
   width: 300px;
   display: inline-block;
   border: 10px solid #444;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 #green {
