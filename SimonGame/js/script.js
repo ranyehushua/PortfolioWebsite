@@ -144,11 +144,6 @@ $(function() {
 		}
 	});
 
-	//Added listener below to stop the zoom when touch screen is held down on iOS
-	$(document).on('gesturestart', function(e) {
-		e.preventDefault();
-	});
-
 	//Defining the game object constructor
 	function Game() {
 		var comp = [];//track random computer moves
