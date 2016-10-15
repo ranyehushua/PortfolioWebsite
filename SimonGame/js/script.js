@@ -57,24 +57,24 @@ $(function() {
 	function display(color) {
 		switch(color) {
 			case 'green':
-				$('#green').css('background-color', '#00F74A');
-				greenAudio.currentTime = .08;
+				greenAudio.currentTime = .1;
 				greenAudio.play();
+				$('#green').css('background-color', '#00F74A');
 				break;
 			case 'red':
-				$('#red').css('background-color', '#FF0F17');
-				redAudio.currentTime = .08;
+				redAudio.currentTime = .1;
 				redAudio.play();
+				$('#red').css('background-color', '#FF0F17');
 				break;
 			case 'yellow':
-				$('#yellow').css('background-color', '#CCF707');
-				yellowAudio.currentTime = .15;
+				yellowAudio.currentTime = .1;
 				yellowAudio.play();
+				$('#yellow').css('background-color', '#CCF707');
 				break;
 			case 'blue':
-				$('#blue').css('background-color', '#094AFF');
-				blueAudio.currentTime = .15;
+				blueAudio.currentTime = .1;
 				blueAudio.play();
+				$('#blue').css('background-color', '#094AFF');
 				break;
 		}
 	}
@@ -82,20 +82,20 @@ $(function() {
 	function returnStatic(color) {
 		switch(color) {
 			case 'green':
-				$('#green').css('background-color', '#00A74A');
 				greenAudio.pause();
+				$('#green').css('background-color', '#00A74A');
 				break;
 			case 'red':
-				$('#red').css('background-color', '#9F0F17');
 				redAudio.pause();
+				$('#red').css('background-color', '#9F0F17');
 				break;
 			case 'yellow':
-				$('#yellow').css('background-color', '#CCA707');
 				yellowAudio.pause();
+				$('#yellow').css('background-color', '#CCA707');
 				break;
 			case 'blue':
-				$('#blue').css('background-color', '#094A8F');
 				blueAudio.pause();
+				$('#blue').css('background-color', '#094A8F');
 				break;
 		}
 	}
