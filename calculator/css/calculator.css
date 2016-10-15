@@ -11,6 +11,7 @@
 body {
 	/*backcground image borrowed from https://pixabay.com/en/pencil-the-eraser-notebook-1629888/*/
 	background-image: url('../img/calc-background.jpg');
+	margin: 0px;
 }
 
 #calculator {
