@@ -11,7 +11,13 @@
 body {
 	/*backcground image borrowed from https://pixabay.com/en/pencil-the-eraser-notebook-1629888/*/
 	background-image: url('../img/calc-background.jpg');
-	padding: 5px;
+}
+
+/*media query used to fix issue with loading calc on 375px wide display (iphone) - issue caused by 5px thick right border on calc*/
+@media (max-width: 375px) {
+  body {
+    padding-left: -5px;
+  }
 }
 
 #calculator {
