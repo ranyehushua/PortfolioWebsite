@@ -58,18 +58,22 @@ $(function() {
 		switch(color) {
 			case 'green':
 				$('#green').css('background-color', '#00F74A');
+				greenAudio.currentTime = .08;
 				greenAudio.play();
 				break;
 			case 'red':
 				$('#red').css('background-color', '#FF0F17');
+				redAudio.currentTime = .08;
 				redAudio.play();
 				break;
 			case 'yellow':
 				$('#yellow').css('background-color', '#CCF707');
+				yellowAudio.currentTime = .15;
 				yellowAudio.play();
 				break;
 			case 'blue':
 				$('#blue').css('background-color', '#094AFF');
+				blueAudio.currentTime = .15;
 				blueAudio.play();
 				break;
 		}
@@ -80,22 +84,18 @@ $(function() {
 			case 'green':
 				$('#green').css('background-color', '#00A74A');
 				greenAudio.pause();
-				greenAudio.currentTime = 0;
 				break;
 			case 'red':
 				$('#red').css('background-color', '#9F0F17');
 				redAudio.pause();
-				redAudio.currentTime = 0;
 				break;
 			case 'yellow':
 				$('#yellow').css('background-color', '#CCA707');
 				yellowAudio.pause();
-				yellowAudio.currentTime = 0;
 				break;
 			case 'blue':
 				$('#blue').css('background-color', '#094A8F');
 				blueAudio.pause();
-				blueAudio.currentTime = 0;
 				break;
 		}
 	}
