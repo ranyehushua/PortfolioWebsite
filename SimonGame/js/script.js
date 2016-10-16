@@ -331,6 +331,7 @@ $(function() {
 
 		function winner() {
 			clearTimers();
+			obj.playerTurn = false;
 			//add UI effects for winning
 			audioSprite.currentTime = audioSpriteData.win.start
 			audioSprite.playbackRate = 1.0;
