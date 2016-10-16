@@ -3,39 +3,39 @@ $(function() {
 	var game; //variable to store the Game object
 	var timers = []; //store all timers in an array, so they can easily all be killed with power off or other appropriate events
 
-	//declaring audio objects
-	var greenAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-	greenAudio.playbackRate = .5;
+	//declaring audio sprite object as well as object to store time data for the sprite
+	var audioSprite = new Audio('audio/sprite.mp3');
+	audioSprite.playbackRate = .5;
 
-	var redAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
-	redAudio.playbackRate = .5;
-
-	var yellowAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
-	yellowAudio.playbackRate = .5;
-
-	var blueAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
-	blueAudio.playbackRate = .5;
-
-	var errorAudio = new Audio('audio/gameover.mp3');
+	var audioSpriteData = {
+		green: {
+			start: 0.1,
+			length: 1.0
+		},
+		red: {
+			start: 2.45,
+			length: 1.2
+		},
+		yellow: {
+			start: 4.85,
+			length: 1.2
+		},
+		blue: {
+			start: 7.1,
+			length: 1.0
+		},
+		error: {
+			start: 9.5,
+			length: 2
+		}
+	}
 
 	//Audio streams are only loaded into memory when triggered by user, so they aren't getting loaded on document ready function
-	//Declaring this function to run when the user switches the game to 'ON' which will cause all audio files to quickly play
+	//Declaring this function to run when the user switches the game to 'ON' which will cause audio file to quickly play
 	//and then pause, in order to load the sounds into memory
 	function prepSounds () {
-		greenAudio.play();
-		greenAudio.pause();
-
-		redAudio.play();
-		redAudio.pause();
-
-		yellowAudio.play();
-		yellowAudio.pause();
-
-		blueAudio.play();
-		blueAudio.pause();
-
-		errorAudio.play();
-		errorAudio.pause(); 
+		audioSprite.play();
+		audioSprite.pause();
 	}
 
 	//global public timeout function for making sure moves are made in time
@@ -57,23 +57,23 @@ $(function() {
 	function display(color) {
 		switch(color) {
 			case 'green':
-				greenAudio.currentTime = .1;
-				greenAudio.play();
+				audioSprite.currentTime = audioSpriteData.green.start;
+				audioSprite.play();
 				$('#green').css('background-color', '#00F74A');
 				break;
 			case 'red':
-				redAudio.currentTime = .1;
-				redAudio.play();
+				audioSprite.currentTime = audioSpriteData.red.start;
+				audioSprite.play();
 				$('#red').css('background-color', '#FF0F17');
 				break;
 			case 'yellow':
-				yellowAudio.currentTime = .1;
-				yellowAudio.play();
+				audioSprite.currentTime = audioSpriteData.yellow.start;
+				audioSprite.play();
 				$('#yellow').css('background-color', '#CCF707');
 				break;
 			case 'blue':
-				blueAudio.currentTime = .1;
-				blueAudio.play();
+				audioSprite.currentTime = audioSpriteData.blue.start;
+				audioSprite.play();
 				$('#blue').css('background-color', '#094AFF');
 				break;
 		}
@@ -82,19 +82,19 @@ $(function() {
 	function returnStatic(color) {
 		switch(color) {
 			case 'green':
-				greenAudio.pause();
+				audioSprite.pause();
 				$('#green').css('background-color', '#00A74A');
 				break;
 			case 'red':
-				redAudio.pause();
+				audioSprite.pause();
 				$('#red').css('background-color', '#9F0F17');
 				break;
 			case 'yellow':
-				yellowAudio.pause();
+				audioSprite.pause();
 				$('#yellow').css('background-color', '#CCA707');
 				break;
 			case 'blue':
-				blueAudio.pause();
+				audioSprite.pause();
 				$('#blue').css('background-color', '#094A8F');
 				break;
 		}
@@ -119,8 +119,7 @@ $(function() {
 			console.log('Power OFF');
 			$('#strict').css('background-color', '#888800');
 			$('#count span').text('--');
-			errorAudio.pause(); //in case error buzzer still playing when turn off, kill sound
-			errorAudio.currentTime = 0;
+			audioSprite.pause(); //in case error buzzer still playing when turn off, kill sound
 			game = {};//clear game object
 		}
 	});
@@ -297,7 +296,9 @@ $(function() {
 		
 		//this will run when logic detects that player made wrong move, if strict mode is on then it's game over
 		this.playerError = function() {
-			errorAudio.play();
+			audioSprite.currentTime = audioSpriteData.error.start;
+			audioSprite.play();
+			setTimeout(function () {audioSprite.pause();}, audioSpriteData.error.length * 4000);
 			if (this.strict) gameover();
 			else {
 				clearTimers();
