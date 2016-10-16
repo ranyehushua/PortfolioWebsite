@@ -21,7 +21,7 @@ $(function() {
 			length: 1000
 		},
 		blue: {
-			start: 6.2,
+			start: 6.1,
 			length: 1000
 		},
 		error: {
