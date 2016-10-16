@@ -294,7 +294,7 @@ $(function() {
 				timers.push(setTurnTimer());
 			}, (comp.length + 1) * speed)); //(comp.length + 1) * speed because otherwise player is allowed to move while last color displaying
 
-			console.log(speed);
+			console.log("The current game speed is " + speed + " milliseconds.");
 		}
 
 		
@@ -318,6 +318,7 @@ $(function() {
 			clearTimers();
 			//add UI effect here for gameover before the game is reset
 			displayResults('LOSE', audioSpriteData.error.length);
+			console.log('Game Over...');
 		}
 
 		function winner() {
@@ -331,6 +332,7 @@ $(function() {
 				audioSprite.playbackRate = .5;
 			}, audioSpriteData.win.length);
 			displayResults('WIN', audioSpriteData.win.length);
+			console.log('You are a WINNER!!!');
 		}
 
 		function displayResults(result, duration) {
