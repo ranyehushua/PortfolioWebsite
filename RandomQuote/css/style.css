@@ -3,10 +3,9 @@
 }
 
 body {
-  padding: 80px;
+  padding: 20px;
   background-color: red;
   color: red;
-  min-width: 760px;
 }
 
 #quoteBox {
@@ -29,8 +28,6 @@ blockquote footer{
   outline: 0;
   border: none;
 }
-
-
 
 #footer {
   color: white;
