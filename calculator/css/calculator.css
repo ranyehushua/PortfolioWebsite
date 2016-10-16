@@ -112,3 +112,18 @@ body {
 	float: left;
 	margin-top: 30px;
 }
+
+/*Improved display on screens narrower than 400px*/
+@media (max-width: 399px) {
+	#calculator {
+		width: 320px;
+	}
+
+	#output {
+		width: 250px;
+	}
+
+	#keypad {
+		margin-left: 20px;
+	}
+}
