@@ -10,23 +10,27 @@ $(function() {
 	var audioSpriteData = {
 		green: {
 			start: 0.1,
-			length: 1.0
+			length: 1000
 		},
 		red: {
-			start: 2.45,
-			length: 1.2
+			start: 2.1,
+			length: 1000
 		},
 		yellow: {
-			start: 4.85,
-			length: 1.2
+			start: 4.2,
+			length: 1000
 		},
 		blue: {
-			start: 7.1,
-			length: 1.0
+			start: 6.2,
+			length: 1000
 		},
 		error: {
-			start: 9.5,
-			length: 2
+			start: 8,
+			length: 5000
+		},
+		win: {
+			start: 12,
+			length: 7000
 		}
 	}
 
@@ -298,7 +302,7 @@ $(function() {
 		this.playerError = function() {
 			audioSprite.currentTime = audioSpriteData.error.start;
 			audioSprite.play();
-			setTimeout(function () {audioSprite.pause();}, audioSpriteData.error.length * 4000);
+			setTimeout(function () {audioSprite.pause();}, audioSpriteData.error.length);
 			if (this.strict) gameover();
 			else {
 				clearTimers();
@@ -306,23 +310,30 @@ $(function() {
 				obj.player = [];
 				timers.push(setTimeout(function() {
 					displayMove();
-				}, 1000)); //add extra 1 second delay before displaying comp moves again
+				}, 4000)); //add delay before displaying comp moves again
 			}
 		}
 
 		function gameover() {
 			clearTimers();
 			//add UI effect here for gameover before the game is reset
-			displayResults('LOSE');
+			displayResults('LOSE', audioSpriteData.error.length);
 		}
 
 		function winner() {
 			clearTimers();
 			//add UI effects for winning
-			displayResults('WIN');
+			audioSprite.currentTime = audioSpriteData.win.start
+			audioSprite.playbackRate = 1.0;
+			audioSprite.play();
+			setTimeout(function () {
+				audioSprite.pause();
+				audioSprite.playbackRate = .5;
+			}, audioSpriteData.win.length);
+			displayResults('WIN', audioSpriteData.win.length);
 		}
 
-		function displayResults(result) {
+		function displayResults(result, duration) {
 			$('#count span').text(result);
 			var dim = window.setInterval(function() {
 				$('#count span').css('color', '#430710');
@@ -331,7 +342,7 @@ $(function() {
 				}, 500));
 			}, 1000);
 			timers.push(dim);
-			timers.push(window.setTimeout(function() {window.clearInterval(dim); obj.reset();}, 5000));
+			timers.push(window.setTimeout(function() {window.clearInterval(dim); obj.reset();}, duration));
 		}
 	}
 });
