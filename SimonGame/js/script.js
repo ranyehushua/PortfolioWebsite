@@ -159,8 +159,8 @@ $(function() {
 			quadTimer = setTimeout(function() {
 				returnStatic(color);
 				if (game.playerTurn) {
-				game.checkMove();
-			}
+					game.checkMove();
+				}
 			}, 2000);
 		}
 	});
@@ -168,10 +168,10 @@ $(function() {
 	//At mouse up, for the UI we stop playing the sound, change color back to the non-pressed version.
 	//Mouse up will also trigger the games method for checking whether gameover or good move.
 	$('.quad').on('vmouseup', function() {
-		clearTimeout(quadTimer);
-		var color = $(this).attr('id');
-		returnStatic(color);
 		if (game.playerTurn) {
+			clearTimeout(quadTimer);
+			var color = $(this).attr('id');
+			returnStatic(color);
 			game.checkMove();
 		}
 	});
@@ -308,13 +308,13 @@ $(function() {
 		
 		//this will run when logic detects that player made wrong move, if strict mode is on then it's game over
 		this.playerError = function() {
+			obj.playerTurn = false;
 			audioSprite.currentTime = audioSpriteData.error.start;
 			audioSprite.play();
 			setTimeout(function () {audioSprite.pause();}, audioSpriteData.error.length);
 			if (this.strict) gameover();
 			else {
 				clearTimers();
-				obj.playerTurn = false;
 				obj.player = [];
 				timers.push(setTimeout(function() {
 					displayMove();
