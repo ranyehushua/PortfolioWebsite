@@ -2,6 +2,7 @@ $(function() {
 	var power = false; //power is set to off when page is loaded
 	var game; //variable to store the Game object
 	var timers = []; //store all timers in an array, so they can easily all be killed with power off or other appropriate events
+	var quadTimer; //this will be the only separate timer since is for UI interaction vs actual gameplay. Use to pause audio if player holds quad too long
 
 	//declaring audio sprite object as well as object to store time data for the sprite
 	var audioSprite = new Audio('audio/sprite.mp3');
@@ -155,12 +156,19 @@ $(function() {
 			var color = $(this).attr('id');
 			display(color);
 			game.player.push(color);
+			quadTimer = setTimeout(function() {
+				returnStatic(color);
+				if (game.playerTurn) {
+				game.checkMove();
+			}
+			}, 2000);
 		}
 	});
 
 	//At mouse up, for the UI we stop playing the sound, change color back to the non-pressed version.
 	//Mouse up will also trigger the games method for checking whether gameover or good move.
 	$('.quad').on('vmouseup', function() {
+		clearTimeout(quadTimer);
 		var color = $(this).attr('id');
 		returnStatic(color);
 		if (game.playerTurn) {
