@@ -1,6 +1,6 @@
 {
   "resources": [
-    "sprite.mp3"
+    "sprite1.mp3"
   ],
   "spritemap": {
     "simonSound1": {
@@ -26,6 +26,11 @@
     "gameover": {
       "start": 8,
       "end": 10.05092970521542,
+      "loop": false
+    },
+    "win": {
+      "start": 12,
+      "end": 22,
       "loop": false
     }
   }
