@@ -40,5 +40,10 @@ blockquote footer{
 }
 
 #tweetButton {
-  margin-top: 10px;
+  cursor: pointer;
+}
+
+#tweetButton img {
+  margin-top: 20px;
+  width: 30px;
 }
