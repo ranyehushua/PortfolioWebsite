@@ -34,18 +34,8 @@ NAVIGATION
 HOME MODULE
 *****************/
 
-#home { 
-	background: url(../img/mountain-background.jpg) no-repeat left fixed; /*borrowed from http://www.hdwallpapers.org/walls/ama-dablam-himalaya-mountains-wide.jpg*/
-	/*Email sent requesting permission to use on 3/5/2016*/
-	/*Hello Piyush,
-I am currently studying web development and I came across this post of yours on HDWallpapers,org: http://www.hdwallpapers.org/ama-dablam-himalaya-mountains-wallpapers.html
-
-I am just making a basic landing page as practice and I was hoping it would be alright with you  if I use this image as my main landing background? I will not be monetizing off this site at all, no advertisement or sale. It's just a basic practice landing page but I'd like to launch it live so I can share my work with friends, family and potential employers. 
-
-Would this be alright with you?
-
-Thanks!
--Ran*/
+#home {
+	background: url(../img/mountain-background-dimmed.jpg) no-repeat left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -53,13 +43,14 @@ Thanks!
 }
 
 #introHeader {
-	/*margin-top: 200px;*/
-	color: #15110B;
+	color: #fff;
+
 }
 
 #introHeader h1 {
 	font-size: 4em;
 	font-weight: 800;
+	margin-top: 0;
 }
 
 #introHeader h3 {
