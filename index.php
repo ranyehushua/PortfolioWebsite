@@ -234,11 +234,11 @@
   <footer>
     <!-- <div class="container-fluid"> -->
       <ul class="list-inline text-center">
-        <li><a href="http://www.facebook.com/ran.yehushua/"><img src="img/glyphicons-facebook.png"></a></li>
-        <li><a href="http://www.Twitter.com/yehoosh/"><img src="img/glyphicons-twitter.png"></a></li>
-        <li><a href="https://www.instagram.com/yehoosh/"><img src="img/glyphicons-instagram.png"></a></li>
-        <li><a href="https://www.linkedin.com/in/ran-yehushua-32617422"><img src="img/glyphicons-linkedin.png"></a></li>
-        <li><a href="https://github.com/ranyehushua/"><img src="img/glyphicons-github.png"></a></li>
+        <li><a href="http://www.facebook.com/ran.yehushua/"><img src="img/glyphicons-facebook-inverted.png"></a></li>
+        <li><a href="http://www.Twitter.com/yehoosh/"><img src="img/glyphicons-twitter-inverted.png"></a></li>
+        <li><a href="https://www.instagram.com/yehoosh/"><img src="img/glyphicons-instagram-inverted.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/ran-yehushua-32617422"><img src="img/glyphicons-linkedin-inverted.png"></a></li>
+        <li><a href="https://github.com/ranyehushua/"><img src="img/glyphicons-github-inverted.png"></a></li>
       </ul>
       <p class="text-center">&copy; 2016 Ran Yehushua.</p>
     <!-- </div> -->
