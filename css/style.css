@@ -7,7 +7,6 @@ GENERAL
 }
 
 .module {
-	/*height: 800px;*/
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -91,14 +90,8 @@ HOME MODULE
 ABOUT MODULE
 *****************/
 
-#about { 
-	background: url(../img/about-background.jpg) no-repeat center fixed; /*borrowed from http://www.josephlozowski.name/jared/pictures/drop-of-water-597109_1280.jpg*/
-	/*sent email to lozowskijr@gmail.com on 3/5/2016 requesting permission to use this image*/
-	/*received response from Joseph on 3/5, I can use this image - he got it for free*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#about {
+	background-color: #ddd;
 	color: white;
 }
 
@@ -124,9 +117,8 @@ ABOUT MODULE
 PORTFOLIO MODULE
 *****************/
 
-#portfolio { 
-	background: url(../img/portfolio-background.jpg) no-repeat center fixed; /*borrowed from http://samuelmontgomery.com/wp-content/uploads/2015/10/CyT83yY.jpg*/
-	/*sent email to sammontgomerydevelopment@gmail.com on 3/5/2016 requesting permission to use*/
+#portfolio {
+	background: url(../img/about-background.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -154,15 +146,11 @@ PORTFOLIO MODULE
 CONTACT MODULE
 *****************/
 
-#contact { 
-	background: url(../img/contact-background.jpg) no-repeat center fixed; /*Obtained for fre from pixabay*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#contact {
+	background-color: #ddd;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	color: #F5F5F5;
+	color: #666;
 }
 
 #emailMessage {
@@ -171,7 +159,7 @@ CONTACT MODULE
 }
 
 #contact h3 {
-	margin-bottom: 30px;
+	margin: 0 20px 30px;
 	font-weight: 800;
 }
 
