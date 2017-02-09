@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    
+
   </head>
   <body data-spy="scroll" data-target="#navbar-links">
   <!-- Start Nav -->
@@ -73,7 +73,7 @@
       </div>
     </div>
   </div> <!-- End Home Module -->
-  
+
   <!-- Start About Module -->
   <div id="about" class="module">
     <div class="container">
@@ -91,7 +91,7 @@
       </div>
     </div>
   </div> <!-- End About Module -->
-  
+
   <!-- Start Portfolio Module -->
   <!-- Note that each thumbnail preview is 500 x 380 -->
   <!-- Note the clearfixes applied. On small and medium displays where there are 2 columns, clearfix is visible after every 2nd thumbnail. On large display with 3 columns, clearfix div is applied after every 3rd thumnail -->
@@ -152,9 +152,7 @@
   <div id="contact" class="module">
     <div class="container">
       <div class="row">
-        <div class="text-center">
-          <h3>Please feel free to contact me, I look forward to hearing from you!</h3>
-        </div>
+        <h3>Please feel free to contact me, I look forward to hearing from you!</h3>
       </div>
       <!-- Start ContactForm -->
       <div class="row">
@@ -222,10 +220,10 @@
               echo "There was an error sending your message.";
             }
 
-          
+
 
           }
-        
+
         ?>
       </div>
       <!-- End PHP email submission -->
