@@ -183,7 +183,7 @@ FOOTER
 *****************/
 
 footer {
-	background: url(../img/contact-background.jpg) no-repeat center fixed; /*Obtained for fre from pixabay*/
+	background: url(../img/footer-background.jpg) no-repeat center scroll; /*Obtained for fre from pixabay*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
