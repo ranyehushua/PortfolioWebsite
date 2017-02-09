@@ -164,6 +164,12 @@ CONTACT MODULE
 	font-weight: 800;
 }
 
+@media (min-width: 992px) {
+	#contact h3 {
+		text-align: center;
+	}
+}
+
 #submitContact {
 	margin-top: 20px;
 }
