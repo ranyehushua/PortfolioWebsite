@@ -100,17 +100,17 @@
       <div class="row">
         <!-- Start Thumbnail #1 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="calculator/index.html">
-            <img src="img/thumbnails/calculator.png" class="img-responsive">
-            <div class="caption">A vanilla JavaScript calculator application.</div>
+          <a class="thumbnail" href="ReactWeather/index.html">
+            <img src="img/thumbnails/weather.png" class="img-responsive">
+            <div class="caption">A weather search application built with React.</div>
           </a>
         </div>
         <!-- End Thumbnail #1 -->
         <!-- Start Thumbnail #2 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="SimonGame/index.html">
-            <img src="img/thumbnails/simon.png" class="img-responsive">
-            <div class="caption">Simon game built with jQuery. Practice with audio and modular code design.</div>
+          <a class="thumbnail" href="BudgetBalancer/index.html">
+            <img src="img/thumbnails/budget.png" class="img-responsive">
+            <div class="caption">A budget balancing tool built with React and Redux.</div>
           </a>
         </div>
         <!-- End Thumbnail #2 -->
@@ -118,9 +118,9 @@
         <div class="clearfix visible-sm-block visible-md-block"></div>
         <!-- Start Thumbnail #3 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="WikiViewer/index.html">
-            <img src="img/thumbnails/wikiviewer.png" class="img-responsive">
-            <div class="caption">An application for searching Wikipedia.</div>
+          <a class="thumbnail" href="calculator/index.html">
+            <img src="img/thumbnails/calculator.png" class="img-responsive">
+            <div class="caption">A vanilla JavaScript calculator application.</div>
           </a>
         </div>
         <!-- End Thumbnail #3 -->
@@ -128,9 +128,9 @@
         <div class="clearfix visible-lg-block"></div>
         <!-- Start Thumbnail #4 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="RandomQuote/index.html">
-            <img src="img/thumbnails/quote.png" class="img-responsive">
-            <div class="caption">Random quote generator.</div>
+          <a class="thumbnail" href="SimonGame/index.html">
+            <img src="img/thumbnails/simon.png" class="img-responsive">
+            <div class="caption">Simon game built with jQuery.</div>
           </a>
         </div>
         <!-- End Thumbnail #4 -->
