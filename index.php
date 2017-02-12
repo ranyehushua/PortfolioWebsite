@@ -61,13 +61,12 @@
             <h3 class="text-center">Design. Develop. Implement.</h3>
           </div>
           <hr>
-          <ul id="introNav" class="list-inline text-center">
-            <!-- <li><a href=""><button class="fb-button">Facebook</button></a></li> -->
-            <li><a class="btn btn-default social-button fb-button" href="http://www.facebook.com/ran.yehushua/" role="button">Facebook</a></li>
-            <li><a class="btn btn-default social-button twitter-button" href="http://www.Twitter.com/yehoosh/" role="button">Twitter</a></li>
-            <li><a class="btn btn-default social-button insta-button" href="https://www.instagram.com/yehoosh/" role="button">Instagram</a></li>
-            <li><a class="btn btn-default social-button linkedin-button" href="https://www.linkedin.com/in/ran-yehushua-32617422" role="button">Linkedin</a></li>
-            <li><a class="btn btn-default social-button github-button" href="https://github.com/ranyehushua/" role="button">GitHub</a></li>
+          <ul id="socialNav" class="list-inline text-center">
+            <li><a href="http://www.facebook.com/ran.yehushua/"><img src="img/glyphicons-facebook.png"></a></li>
+            <li><a href="http://www.Twitter.com/yehoosh/"><img src="img/glyphicons-twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/yehoosh/"><img src="img/glyphicons-instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/ran-yehushua-32617422"><img src="img/glyphicons-linkedin.png"></a></li>
+            <li><a href="https://github.com/ranyehushua/"><img src="img/glyphicons-github.png"></a></li>
           </ul>
         </div>
       </div>

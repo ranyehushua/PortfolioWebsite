@@ -56,8 +56,15 @@ HOME MODULE
 	font-weight: 700;
 }
 
-#introNav li {
-	margin-top: 5px;
+#socialNav {
+	margin: 0;
+}
+
+#socialNav li {
+	margin: 5px;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 3px;
 }
 
 .social-button {
