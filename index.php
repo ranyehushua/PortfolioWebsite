@@ -77,14 +77,14 @@
   <div id="about" class="module">
     <div class="container">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1" id="bio">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1" id="bio">
         <h2>Yehoosh Web Solutions.</h2>
         <p>I am a self taught web developer based in Salt Lake City, Utah. When I am not honing my web development skills, I enjoy spending my freetime in the Wasatch Mountains, snowboarding in the winter and mountain biking in the summer.</p>
         <p>I am currently seeking work in the web development and design field. If you would like to network, please do not hesitate to contact me!</p>
         <p>Please also feel free to <a href="files/Resume.pdf">browse my Resume</a></p>
         </div>
         <!-- right column is hidden on screens less than 768px wide -->
-        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0">
           <img id="avatarImage" src="img/avatar.jpg" class="img-responsive">
         </div>
       </div>
