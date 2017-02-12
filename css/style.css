@@ -34,7 +34,7 @@ HOME MODULE
 *****************/
 
 #home {
-	background: url(../img/mountain-background-dimmed.jpg) no-repeat left fixed;
+	background: url(../img/mountain-background-shrunk.jpg) no-repeat left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -125,7 +125,7 @@ PORTFOLIO MODULE
 *****************/
 
 #portfolio {
-	background: url(../img/about-background.jpg) no-repeat center fixed;
+	background: url(../img/portfolio-background-shrunk.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
