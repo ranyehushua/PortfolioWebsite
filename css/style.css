@@ -171,7 +171,7 @@ CONTACT MODULE
 	font-weight: 800;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 436px) {
 	#contact h3 {
 		text-align: center;
 	}

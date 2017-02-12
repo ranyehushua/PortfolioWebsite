@@ -151,7 +151,7 @@
   <div id="contact" class="module">
     <div class="container">
       <div class="row">
-        <h3>Please feel free to contact me, I look forward to hearing from you!</h3>
+        <h3>I look forward to hearing from you!</h3>
       </div>
       <!-- Start ContactForm -->
       <div class="row">
