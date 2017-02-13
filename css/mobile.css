@@ -15,6 +15,11 @@ Modifications to style when on mobile device
 	#introHeader h1 {
 		font-size: 3em;
 	}
+
+	#about {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
 
 /*This query is just used to make sure that the background is set to 'scroll' rather than 'fixed' on mobile devides, otherwise there is an issue with the zoomed background image*/
