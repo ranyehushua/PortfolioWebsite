@@ -81,17 +81,17 @@
       <div class="row">
         <!-- Start Thumbnail #1 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="ReactWeather/index.html">
-            <img src="img/thumbnails/weather.png" class="img-responsive">
-            <div class="caption">A weather search application built with React.</div>
+          <a class="thumbnail" href="BudgetBalancer/index.html">
+            <img src="img/thumbnails/budget.png" class="img-responsive">
+            <div class="caption">A budget balancing tool built with React and Redux.</div>
           </a>
         </div>
         <!-- End Thumbnail #1 -->
         <!-- Start Thumbnail #2 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="BudgetBalancer/index.html">
-            <img src="img/thumbnails/budget.png" class="img-responsive">
-            <div class="caption">A budget balancing tool built with React and Redux.</div>
+          <a class="thumbnail" href="http://www.oc4d.org/">
+            <img src="img/thumbnails/oc4d.png" class="img-responsive">
+            <div class="caption">Open Content for Development. Built on MediaWiki.</div>
           </a>
         </div>
         <!-- End Thumbnail #2 -->
@@ -99,9 +99,9 @@
         <div class="clearfix visible-sm-block visible-md-block"></div>
         <!-- Start Thumbnail #3 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="calculator/index.html">
-            <img src="img/thumbnails/calculator.png" class="img-responsive">
-            <div class="caption">A vanilla JavaScript calculator application.</div>
+          <a class="thumbnail" href="ReactWeather/index.html">
+            <img src="img/thumbnails/weather.png" class="img-responsive">
+            <div class="caption">A weather search application built with React.</div>
           </a>
         </div>
         <!-- End Thumbnail #3 -->
@@ -119,15 +119,27 @@
         <div class="clearfix visible-sm-block visible-md-block"></div>
         <!-- Start Thumbnail #5 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
+          <a class="thumbnail" href="calculator/index.html">
+            <img src="img/thumbnails/calculator.png" class="img-responsive">
+            <div class="caption">A vanilla JavaScript calculator application.</div>
+          </a>
+        </div>
+        <!-- End Thumbnail #5 -->
+        <!-- Start Thumbnail #6 -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
           <a class="thumbnail" href="PomodoroClock/index.html">
             <img src="img/thumbnails/pomodoro.png" class="img-responsive">
             <div class="caption">A Pomodoro clock application.</div>
           </a>
         </div>
-        <!-- End Thumbnail #5 -->
+        <!-- End Thumbnail #6 -->
+        <!-- Clearfix visible on all resolutions (when in 2 and 3 column layout) -->
+        <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
       </div>
     </div>
-  </div> <!-- End Portfolio Module -->
+  </div>
+
+  <!-- End Portfolio Module -->
 
   <!-- Start About Module -->
   <div id="about" class="module">
