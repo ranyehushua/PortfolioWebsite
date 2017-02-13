@@ -58,7 +58,7 @@
         <div class="col-xs-10 col-xs-offset-1">
           <div id="introHeader">
             <h1 class="text-center">Yehoosh Web Solutions</h1>
-            <h3 class="text-center">Full-Stack JavaScript Developer</h3>
+            <h3 class="text-center">Full Stack JavaScript Developer</h3>
           </div>
           <hr>
           <ul id="socialNav" class="list-inline text-center">
