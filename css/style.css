@@ -127,6 +127,8 @@ ABOUT MODULE
 	-o-background-size: cover;
 	background-size: cover;
 	color: white;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 #about h2 {
