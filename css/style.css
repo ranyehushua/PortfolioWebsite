@@ -94,14 +94,13 @@ PORTFOLIO MODULE
 *****************/
 
 #portfolio {
-	background-color: #ddd;
+	background-color: #fff;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
 #portfolio .thumbnail {
-	background-color: #333;
-
+	background-color: #fefefe;
 }
 
 #portfolio .thumbnail:hover {
@@ -109,7 +108,7 @@ PORTFOLIO MODULE
 }
 
 #portfolio .thumbnail .caption {
-	color: #ccc;
+	color: #aaa;
 }
 
 
