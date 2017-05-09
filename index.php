@@ -99,9 +99,9 @@
         <div class="clearfix visible-sm-block visible-md-block"></div>
         <!-- Start Thumbnail #3 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="ReactWeather/index.html">
-            <img src="img/thumbnails/weather.png" class="img-responsive">
-            <div class="caption">A weather search application built with React.</div>
+          <a class="thumbnail" href="http://restwell.today">
+            <img src="img/thumbnails/restorative-wellness.png" class="img-responsive">
+            <div class="caption">A website I built for my sister's company, using Wordpress.</div>
           </a>
         </div>
         <!-- End Thumbnail #3 -->
@@ -127,9 +127,9 @@
         <!-- End Thumbnail #5 -->
         <!-- Start Thumbnail #6 -->
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <a class="thumbnail" href="PomodoroClock/index.html">
-            <img src="img/thumbnails/pomodoro.png" class="img-responsive">
-            <div class="caption">A Pomodoro clock application.</div>
+          <a class="thumbnail" href="ReactWeather/index.html">
+            <img src="img/thumbnails/weather.png" class="img-responsive">
+            <div class="caption">A weather search application built with React.</div>
           </a>
         </div>
         <!-- End Thumbnail #6 -->
