@@ -128,7 +128,7 @@ ABOUT MODULE
 }
 
 #about h2 {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 #about a {
@@ -137,8 +137,9 @@ ABOUT MODULE
 }
 
 #bio {
-	background-color: rgba(50, 50, 50, .6);
+	background-color: rgba(50, 50, 50, .7);
 	border-radius: 20px;
+	padding: 20px;
 }
 
 #avatarImage {

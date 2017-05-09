@@ -147,7 +147,8 @@
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1" id="bio">
         <h2>Yehoosh Web Solutions.</h2>
-        <p>I am a self taught web developer based in Salt Lake City, Utah. When I am not honing my web development skills, I enjoy spending my freetime in the Wasatch Mountains, snowboarding in the winter and mountain biking in the summer.</p>
+        <p>I am a web developer based in Salt Lake City, Utah. In the past 3 years I have become proficient with Javascript and I am passionate about working with modern Javascript frameworks/libraries. Lately, I have been particularly excited about working with ReactJS to build UI and managing state with Redux. I have some experience with Angular as well and have worked with JQuery for a couple years. I have worked with NodeJS, Restify and Express and I have a strong working knowledge of the full stack.</p>
+        <p>When I am not honing my web development skills, I enjoy spending my freetime in the Wasatch Mountains, snowboarding in the winter and mountain biking in the summer.</p>
         <p>I am currently seeking work in the web development and design field. If you would like to network, please do not hesitate to contact me!</p>
         <p>Please also feel free to <a href="files/Resume.pdf">browse my Resume</a></p>
         </div>
